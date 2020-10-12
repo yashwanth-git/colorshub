@@ -1,24 +1,9 @@
-# colorshub
+# Colorshub
+Colorshub is a collection of user created color palettes to share between other developers and designers. It's a clone of colorhunt made in Vue.
 
-## Project setup
-```
-npm install
-```
+## TechStack
+- Vue
+- Firestore
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Live Demo
+[colorshub](https://colorshub.netlify.app/)
