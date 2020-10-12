@@ -127,7 +127,7 @@ export default {
     unsave(id) {
       this.colors = this.colors.filter((color) => color.id !== id);
       localStorage.removeItem(`palette-${id}`);
-      if (localStorage.length <= 1) {
+      if (localStorage.length === 0) {
         this.visible = true;
       }
     },
