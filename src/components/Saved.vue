@@ -61,32 +61,6 @@
   </div>
 </template>
 
-<style scoped>
-.Saved {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 5em 2em;
-}
-.not-found {
-  text-align: center;
-}
-.not-found p {
-  margin-top: 1em;
-  font-size: 1.5rem;
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-.btn-browse {
-  text-decoration: none;
-  color: inherit;
-  padding: 0.5em 1em;
-  margin-top: 1em;
-}
-</style>
 
 <script>
 import moment from "moment";
@@ -127,7 +101,7 @@ export default {
     unsave(id) {
       this.colors = this.colors.filter((color) => color.id !== id);
       localStorage.removeItem(`palette-${id}`);
-      if (localStorage.length === 0) {
+      if (localStorage.length == 0) {
         this.visible = true;
       }
     },
@@ -140,3 +114,30 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.Saved {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 5em 2em;
+}
+.not-found {
+  text-align: center;
+}
+.not-found p {
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.btn-browse {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+}
+</style>
